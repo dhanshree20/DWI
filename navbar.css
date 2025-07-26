@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 40px;
+  font-size: 14px;
+}
+
+.contact-info span {
+  margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons span {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a, .navbar li {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar .dropdown i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.quote-btn button {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* SERVICES DROPDOWN GRID STYLING */
+.dropdown {
+  position: relative;
+}
+
+.services-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 800px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  z-index: 1000;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-left: -300px;
+}
+
+
+/* Show services-dropdown on hover */
+.dropdown:hover .services-dropdown {
+  display: grid;
+}
+
+
+
+.service-item {
+  text-align: center;
+}
+
+.service-item i {
+  color: #F57C00;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  font-size: 30px;
+}
+
+.service-item:hover i {
+  transform: scale(1.2);
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+}

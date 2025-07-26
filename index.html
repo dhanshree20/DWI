@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DWI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+   <!-- AOS Library CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+<!-- Navbar Header -->
+<div id="navbar-container"></div>    
+
+<!-- Our Services Section -->
+
+  <section class="services-section">
+    <h2 class="title">Our Expertise</h2>
+    <p class="description">
+      We specialize in website design, web development, software solutions, mobile apps, internet marketing, and social networking applications.
+      When you work with us, you'll get solutions that are both performance-oriented and highly effective.
+    </p>
+
+    <div class="services-container">
+      <!-- Left Tabs -->
+      <div class="tabs animate-left">
+        <button class="tab active" onclick="showContent('web')">Web Development</button>
+        <button class="tab" onclick="showContent('app')">App Development</button>
+        <button class="tab" onclick="showContent('uiux')">UI/UX Design</button>
+        <button class="tab" onclick="showContent('software')">Custom Software Development</button>
+        <button class="tab" onclick="showContent('erpcrm')">ERP & CRM Systems</button>
+        <button class="tab" onclick="showContent('social')">Social Media Handling</button>
+        <button class="tab" onclick="showContent('digital')">Digital Marketing</button>
+        <button class="tab" onclick="showContent('aiml')">AI & Machine Learning</button>
+        <button class="tab" onclick="showContent('outsource')">Resource-Outsource</button>
+      </div>
+
+      <!-- Right Content -->
+      <div class="tab-content animate-right">
+        <div class="content-box active" id="web">
+          <h3>Web Development</h3>
+          <p>Custom web solutions built with cutting-edge technologies to create responsive, high-performance websites that deliver exceptional user experiences.</p>
+          <div class="grid">
+            <div class="hexagon"><span>React</span></div>
+            <div class="hexagon"><span>Next JS</span></div>
+            <div class="hexagon"><span>Angular</span></div>
+            <div class="hexagon"><span>Vue</span></div>
+            <div class="hexagon"><span>Typescript</span></div>
+            <div class="hexagon"><span>Node JS</span></div>
+            <div class="hexagon"><span>MongoDB</span></div>
+            <div class="hexagon"><span>PostgreSQL</span></div>
+            <div class="hexagon"><span>MySQL</span></div>
+            <div class="hexagon"><span>Tailwind</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="app">
+          <h3>App Development</h3>
+          <p>Native and cross-platform mobile applications that provide seamless experiences across iOS and Android devices.</p>
+          <div class="grid">
+            <div class="hexagon"><span>React Native</span></div>
+            <div class="hexagon"><span>Swift</span></div>
+            <div class="hexagon"><span>Flutter</span></div>
+            <div class="hexagon"><span>Kotlin</span></div>
+            <div class="hexagon"><span>Java</span></div>
+            <div class="hexagon"><span>Firebase</span></div>
+            <div class="hexagon"><span>NodeJS</span></div>
+            <div class="hexagon"><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="uiux">
+          <h3>UI/UX Design</h3>
+          <p>Intuitive and visually stunning interfaces that enhance user engagement and satisfaction while reflecting your brand identity.</p>
+          <div class="grid">
+            <div class="hexagon"><span>Figma</span></div>
+            <div class="hexagon"><span>Adobe XD</span></div>
+            <div class="hexagon"><span>Sketch</span></div>
+            <div class="hexagon"><span>InVision</span></div>
+            <div class="hexagon"><span>Protopie</span></div>
+            <div class="hexagon"><span>Zeplin</span></div>
+            <div class="hexagon"><span>Adobe Creative Suite</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="software">
+          <h3>Custom Software Development</h3>
+          <p>Tailored software solutions designed to meet your unique business requirements, streamline operations, and drive innovation.</p>
+          <div class="grid">
+            <div class="hexagon"><span>Java</span></div>
+            <div class="hexagon"><span>Python</span></div>
+            <div class="hexagon"><span>.NET</span></div>
+            <div class="hexagon"><span>NodeJS</span></div>
+            <div class="hexagon"><span>React</span></div>
+            <div class="hexagon"><span>Angular</span></div>
+            <div class="hexagon"><span>PostgreSQL</span></div>
+            <div class="hexagon"><span>MongoDB</span></div>
+            <div class="hexagon"><span>AWS</span></div>
+            <div class="hexagon"><span>Docker</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="erpcrm">
+          <h3>ERP & CRM Systems</h3>
+          <p>Comprehensive enterprise solutions that streamline operations, enhance customer relationships, and drive business growth.</p>
+          <div class="grid">
+            <div class="hexagon"><span>Microsoft <br/>Dynamics</span></div>
+            <div class="hexagon"><span>Salesforce</span></div>
+            <div class="hexagon"><span>Odoo</span></div>
+            <div class="hexagon"><span>SAP</span></div>
+            <div class="hexagon"><span>Oracle</span></div>
+            <div class="hexagon"><span>Custom ERP</span></div>
+            <div class="hexagon"><span>SQL Server</span></div>
+            <div class="hexagon"><span>Power BI</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="social">
+          <h3>Social Media Handling</h3>
+          <p>Strategic social media management that builds your brand presence, engages your audience, and drives meaningful conversions.</p>
+          <div class="grid">
+            <div class="hexagon"><span>UI/UX</span></div>
+            <div class="hexagon"><span>Figma</span></div>
+            <div class="hexagon"><span>Photoshop</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="digital">
+          <h3>Digital Marketing</h3>
+          <p>Data-driven marketing strategies that increase your online visibility, drive targeted traffic, and maximize your ROI through multiple digital channels.</p>
+          <div class="grid">
+            <div class="hexagon"><span>Google <br/>Analytics</span></div>
+            <div class="hexagon"><span>Google Ads</span></div>
+            <div class="hexagon"><span>Meta Ads <br/> Manager</span></div>
+            <div class="hexagon"><span>SEMrush</span></div>
+            <div class="hexagon"><span>Ahrefs</span></div>
+            <div class="hexagon"><span>Mailchimp</span></div>
+            <div class="hexagon"><span>HubSpot</span></div>
+            <div class="hexagon"><span>WordPress</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="aiml">
+          <h3>AI & Machine Learning</h3>
+          <p>Cutting-edge AI and machine learning solutions that transform your data into actionable insights, automate processes, and drive intelligent decision-making.</p>
+          <div class="grid">
+            <div class="hexagon"><span>TensorFlow</span></div>
+            <div class="hexagon"><span>PyTorch</span></div>
+            <div class="hexagon"><span>Scikit-learn</span></div>
+            <div class="hexagon"><span>Python</span></div>
+            <div class="hexagon"><span>R</span></div>
+            <div class="hexagon"><span>CUDA</span></div>
+            <div class="hexagon"><span>OpenAI API</span></div>
+            <div class="hexagon"><span>Hugging Face</span></div>
+            <div class="hexagon"><span>AWS SageMaker</span></div>
+            <div class="hexagon"><span>Azure ML</span></div>
+          </div>
+        </div>
+
+        <div class="content-box" id="outsource">
+          <h3>Resource-Outsource</h3>
+          <p>Flexible resource outsourcing solutions that provide skilled professionals to augment your team and accelerate project delivery.</p>
+          <div class="grid">
+            <div class="hexagon"><span>Full-stack Development</span></div>
+            <div class="hexagon"><span>UI/UX Design</span></div>
+            <div class="hexagon"><span>DevOps</span></div>
+            <div class="hexagon"><span>QA & Testing</span></div>
+            <div class="hexagon"><span>Project Management</span></div>
+            <div class="hexagon"><span>Data Science</span></div>
+            <div class="hexagon"><span>Cloud <br/>Architecture</span></div>
+            <div class="hexagon"><span>Mobile Development</span></div>
+            <div class="hexagon"><span>Blockchain</span></div>
+            <div class="hexagon"><span>IoT</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+  function showContent(id) {
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.content-box');
+
+  tabs.forEach(tab => tab.classList.remove('active'));
+  contents.forEach(box => box.classList.remove('active'));
+
+  document.querySelector(`.tab[onclick*="${id}"]`).classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+</script>
+<script>
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
+
+  document.querySelectorAll('.animate-left, .animate-right').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+
+<!-- Client Section  -->
+
+  <section class="customer-section">
+    <h2 class="client-section-title">Customers & Partners</h2>
+    <div class="diamond-slider">
+      <div class="diamond-track">
+        <!-- Each logo wrapped in a diamond -->
+        <div class="diamond"><img src="Images/client1.jpg" alt="Admark"></div>
+        <div class="diamond"><img src="Images/client2.jpg" alt="Mega"></div>
+        <div class="diamond"><img src="Images/client3.jpg" alt="Copy Cart"></div>
+        <div class="diamond"><img src="Images/client4.jpg" alt="NTC"></div>
+        <div class="diamond"><img src="Images/client5.jpg" alt="Rimraj"></div>
+        <div class="diamond"><img src="Images/client6.jpg" alt="Adisun"></div>
+
+        <!-- Duplicate for infinite scroll effect -->
+        <div class="diamond"><img src="Images/client1.jpg" alt="Admark"></div>
+        <div class="diamond"><img src="Images/client2.jpg" alt="Mega"></div>
+        <div class="diamond"><img src="Images/client3.jpg" alt="Copy Cart"></div>
+        <div class="diamond"><img src="Images/client4.jpg" alt="NTC"></div>
+        <div class="diamond"><img src="Images/client5.jpg" alt="Rimraj"></div>
+        <div class="diamond"><img src="Images/client6.jpg" alt="Adisun"></div>
+      </div>
+    </div>
+  </section>
+
+<!-- About Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <h2>About us</h2>
+      <h1>What is DW Innovation?</h1>
+      <p>
+       "DW Innovation Pvt. Ltd.”, established in 2020 and
+ headquartered in Pune, Maharashtra, is a cutting
+edge IT services company dedicated to delivering
+ innovative and scalable technology solutions. We
+ specialize in developing web applications, mobile
+ apps, and embedded systems tailored to meet the
+ unique needs of our clients.
+      </p>
+      <ul>
+        <li>We specialize in Web Development, Mobile App Development, Embedded Systems, and Custom Software Solutions tailored to your business needs.</li>
+        <li>User-centric and scalable solutions are at the core of everything we build, solving real-world problems and enabling business growth.</li>
+        <li>At DW Innovation, we believe in "Dream Work" — transforming bold ideas into powerful digital realities.</li>
+        <li>With a focus on quality, integrity, and client satisfaction, we help businesses thrive in today’s competitive digital landscape.</li>
+      </ul> 
+      <!-- <div class="stats">
+        <div><strong>250+</strong><br/>Technology Projects</div>
+        <div><strong>150+</strong><br/>Healthcare Customers</div>
+        <div><strong>400+</strong><br/>Technology Experts</div>
+        <div><strong>50%</strong><br/>Cost Saving on Development</div>
+        <div><strong>98%</strong><br/>Client Retention Rate</div>
+      </div> -->
+    </div>
+
+    <div class="image-gallery">
+      <img class="img1" src="Images/images1.jpg" alt="Thinkitive Front Desk">
+      <img class="img2" src="Images/image2.jpg" alt="Thinkitive Wall Info">
+      <img class="img3" src="Images/images1.jpg" alt="Team Group Photo">
+      <img class="img4" src="Images/image3.jpg" alt="Rangoli Welcome">
+      <img class="img5" src="" alt="">
+      <img class="img6" src="Images/image2.jpg" alt="Office Space">
+    </div>
+  </section>
+  <script>
+  // Scroll animations for content
+  ScrollReveal().reveal('.about-content', {
+    origin: 'left',
+    distance: '60px',
+    duration: 1000,
+    delay: 200,
+    easing: 'ease-in-out',
+    opacity: 0,
+    reset: true
+  });
+
+  ScrollReveal().reveal('.image-gallery', {
+    origin: 'right',
+    distance: '60px',
+    duration: 1000,
+    delay: 400,
+    easing: 'ease-in-out',
+    opacity: 0,
+    reset: true,
+    afterReveal: () => {
+      document.querySelectorAll('.image-gallery img').forEach(img => {
+        img.classList.add('bounce-animate');
+      });
+    }
+  });
+</script>  
+
+<!-- Mission & Vision Section -->
+
+   <section class="mission-vision-section">
+    <div class="background-container">
+      <img src="Images/image2.jpg" alt="Team" class="background-image" data-aos="fade-up" data-aos-duration="1000"/>
+
+      <div class="cards-container">
+        <div class="card" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+          <div class="icon">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            DW = Dream Work <br/>
+            At DW Innovation, we're committed to turning dreams into work and work into reality. We strive to deliver innovative digital solutions that empower businesses to achieve their full potential in the digital landscape, while maintaining the highest standards of quality and client satisfaction.
+          </p>
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+          <div class="icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            Bringing Ideas into Reality <br/>
+            We envision a world where technology seamlessly bridges the gap between imagination and implementation. Our goal is to be the catalyst that transforms bold ideas into tangible digital realities, creating solutions that not only meet current needs but anticipate future challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const missionCard = document.getElementById("mission-card");
+    const visionCard = document.getElementById("vision-card");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.id === "mission-card") {
+            entry.target.classList.remove("hidden");
+            entry.target.classList.add("animate-left");
+          } else if (entry.target.id === "vision-card") {
+            entry.target.classList.remove("hidden");
+            entry.target.classList.add("animate-right");
+          }
+        }
+      });
+    }, {
+      threshold: 0.5
+    });
+
+    observer.observe(missionCard);
+    observer.observe(visionCard);
+  });
+</script>
+
+
+<!-- Our Process Section -->
+<section class="process-section">
+    <h2 class="section-title">Our Process</h2>
+    <p class="section-subtitle">
+      We follow a structured yet flexible approach to deliver exceptional results for every project.
+    </p>
+    
+    <div class="process-container">
+      <!-- Step 1 -->
+      <div class="step">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/search--v1.png" alt="Discovery">
+        </div>
+        <span class="step-number">01</span>
+        <h3>Discovery</h3>
+        <p>We begin by understanding your business, goals, and target audience. This phase involves research, interviews, and analysis to establish a solid foundation.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/strategy-board.png" alt="Strategy">
+        </div>
+        <span class="step-number">02</span>
+        <h3>Strategy</h3>
+        <p>We develop a comprehensive strategy outlining project scope, timeline, technical approach, and creative direction to achieve your business objectives.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/design.png" alt="Design">
+        </div>
+        <span class="step-number">03</span>
+        <h3>Design</h3>
+        <p>Our creative team transforms the strategy into beautiful, intuitive designs with wireframes, mockups, and prototypes that align with your brand and user experience goals.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/source-code.png" alt="Development">
+        </div>
+        <span class="step-number">04</span>
+        <h3>Development</h3>
+        <p>Our development team brings designs to life using the latest technologies and best practices. We follow agile methodologies, ensuring regular updates and flexibility to adapt to changing requirements.</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/rocket--v1.png" alt="Testing & Launch">
+        </div>
+        <span class="step-number">05</span>
+        <h3>Testing & Launch</h3>
+        <p>We rigorously test all aspects of your project to ensure quality, performance, and security. After thorough quality assurance, we handle the deployment process for a smooth and successful launchs.</p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/100/ffffff/technical-support.png" alt="Support & Growth">
+        </div>
+        <span class="step-number">06</span>
+        <h3>Support & Growth</h3>
+        <p>Our relationship doesn't end at launch. We provide ongoing support, maintenance, and strategic guidance to help your digital product evolve and grow with your business needs and user feedback.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Footer -->
+<div id="footer-container"></div>
+<script src="footer.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

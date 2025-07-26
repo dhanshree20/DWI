@@ -1,0 +1,244 @@
+/* Our Story Section */
+
+    .story-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .story-section h2 {
+      font-size: 36px;
+      color: black; /* green color */
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-family: Sans-serif;
+      text-align: center;
+      margin-top: -40px;
+    }
+
+    .story-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      color: #333;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .story-section span {
+      font-weight: bold;
+    }
+
+    /* ✅ Mobile Large (600px - 767px) */
+@media (max-width: 767px) and (min-width: 600px) {
+  .story-section h2 {
+    font-size: 30px;
+    margin-top: -20px;
+  }
+
+  .story-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+}
+
+/* ✅ Mobile Medium (400px - 599px) */
+@media (max-width: 599px) and (min-width: 400px) {
+  .story-section h2 {
+    font-size: 26px;
+    margin-top: -15px;
+  }
+
+  .story-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 8px;
+  }
+}
+
+/* ✅ Mobile Small (<400px) */
+@media (max-width: 399px) {
+  .story-section h2 {
+    font-size: 24px;
+    margin-top: -10px;
+  }
+
+  .story-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 6px;
+  }
+}
+
+
+/* Circle Section */
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-left: 400px;
+}
+
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fc9f42;
+}
+
+.center-logo img {
+  width: 150px;
+  height: 100px;
+}
+
+.rotating-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 20s linear infinite;
+}
+
+.circle-item {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: aqua;
+}
+
+/* Positions for each item */
+.item1 { top: 0%;   left: 50%; transform: translate(-50%, 0); }
+.item2 { top: 30%;  right: 0%; transform: translate(0, -50%); }
+.item3 { bottom: 30%; right: 0%; transform: translate(0, 50%); }
+.item4 { bottom: 0%; left: 50%; transform: translate(-50%, 0); }
+.item5 { bottom: 20%; left: 5%; transform: translate(0, 50%); }
+.item6 { top: 30%;  left: 5%; transform: translate(0, -50%); }
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/* Mission & Vision Section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+/* Section Layout */
+.mission-vision-section {
+  padding: 80px 20px;
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background-image {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Cards Overlaid on Image */
+.cards-container {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #1a1a1d;
+  padding: 30px 25px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card .icon {
+  width: 50px;
+  height: 50px;
+  background-color: #febc2f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+.card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(250, 249, 249);
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* Animation Keyframes */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation Classes */
+.animate-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
