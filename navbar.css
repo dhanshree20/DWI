@@ -109,6 +109,19 @@ body {
   text-align: center;
 }
 
+
+.service-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(50%) sepia(85%) saturate(500%) hue-rotate(5deg) brightness(97%) contrast(101%);
+}
+
+.service-item:hover img {
+  transform: scale(1.2);
+}
+
 .service-item i {
   color: #F57C00;
   margin-bottom: 10px;

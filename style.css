@@ -106,7 +106,38 @@ body {
   color: white;
   font-weight: bold;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+
+.hex-text {
+  display: block;
+  transition: opacity 0.3s ease;
+  font-size: 16px;
+}
+
+.hex-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+/* On hover: hide text, show icon */
+.hexagon:hover .hex-text {
+  display: none;
+}
+
+.hexagon:hover .hex-icon {
+  display: block;
+  font-size: 42px;
+}
+
 
 /* Initial hidden state */
 .animate-left, .animate-right {
