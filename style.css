@@ -19,6 +19,7 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+  color: black;
 }
 
 .description {
@@ -288,11 +289,13 @@ html {
 .about-content p {
   margin-bottom: 15px;
   line-height: 1.6;
+  color: #000;
 }
 
 .about-content ul {
   padding-left: 20px;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .about-content ul li {
@@ -620,16 +623,17 @@ body {
 
 .text-content {
   max-width: 500px;
+  color: #000;
 }
 
 .text-content h2 {
   font-size: 42px;
   line-height: 1.3;
-  color: black;
+  color: #000;
 }
 
 .text-content h2 span {
-  color: black;
+  color: #3b82f6;
   font-weight: 700;
 }
 
@@ -637,7 +641,8 @@ body {
   margin-top: 20px;
   font-size: 16px;
   line-height: 1.6;
-  color: black;
+  color: #d1d5db;
+  color: #000;
 }
 
 .btn {
@@ -665,6 +670,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000;
 }
 
 .outer-circle {
@@ -691,7 +697,6 @@ body {
   font-size: 48px;
   font-weight: 700;
   margin: 0;
-  color: black;
 }
 
 .inner-circle p {
@@ -699,8 +704,17 @@ body {
   color: black;
 }
 
-.icon-top,
-.icon-bottom {
+/* Animate container for orbit */
+.rotating-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotate 10s linear infinite;
+  transform-origin: center center;
+}
+
+/* Orbiting icon styles (positioned along orbit path) */
+.orbit-icon {
   position: absolute;
   background: linear-gradient(135deg, #7f5af0, #5eead4);
   padding: 12px;
@@ -708,21 +722,34 @@ body {
 }
 
 .icon-top {
-  top: 20px;
-  right: 20px;
+  top: 0;
+  left: 30%;
+  transform: translateX(-50%);
 }
 
 .icon-bottom {
-  bottom: 20px;
-  left: 20px;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
 }
 
-.icon-top img,
-.icon-bottom img {
+/* Icons inside */
+.orbit-icon img {
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
 }
+
+/* Rotation keyframes */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .idea-section {
@@ -735,4 +762,3 @@ body {
     margin-top: 30px;
   }
 }
-
